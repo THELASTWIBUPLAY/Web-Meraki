@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press Kit — Meraki Studio</title>
+  <meta name="description" content="Meraki Studio is a creative production studio for animation, art, and games based in Malang, Indonesia.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-inner">
+  <nav class="top">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Meraki Studio logo" class="brand-logo">
+        <img src="assets/studio.png" alt="Meraki Studio" class="brand-text">
+      </a>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="project.html">Project</a>
+        <button class="nav-contact-btn open-contact-trigger">CONTACT US ➔</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <span class="mobile-menu-label">NAVIGATION</span>
+      <div class="mobile-links">
+        <a href="index.html"><span class="nav-num">01</span> HOME</a>
+        <a href="company.html"><span class="nav-num">02</span> COMPANY</a>
+        <a href="project.html"><span class="nav-num">03</span> PROJECT</a>
+      </div>
+      <button class="mobile-menu-cta open-contact-trigger">CONTACT US ➔</button>
+    </div>
+  </div>
+
+  <main class="stacked-page">
+    <section class="stack-section company-hero" id="press">
+      <div class="bg-wave-layer" style="z-index: 2;"><img src="assets/2.png" alt="" class="wave-shape"></div>
+      <div class="wrap content-layer">
+        <div class="vision-inner reveal">
+          <h2 class="vision-label">PRESS KIT</h2>
+          <p class="vision-statement">Everything you need to write about Meraki Studio.</p>
+          <p class="vision-body">Official descriptions, quick facts, and brand assets for journalists, partners, and event organizers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="page-extra">
+    <div class="wrap presskit-wrap">
+      <div class="sec-head-light left reveal"><h2>About</h2>
+        <p><strong>Short:</strong> Meraki Studio is a creative production studio in Malang, Indonesia, creating animation, art, and games.</p>
+        <p><strong>Long:</strong> Meraki Studio is an independent creative production studio based in Malang, East Java, Indonesia. The studio supports partners from concept and development through production and post-production, including 2D and 3D animation, asset and rigging, VFX, and game development.</p>
+      </div>
+      <div class="info-grid cols-4 reveal-group">
+        <div class="info-card reveal"><h3>Founded</h3><p>2013</p></div>
+        <div class="info-card reveal"><h3>Location</h3><p>Malang, Indonesia</p></div>
+        <div class="info-card reveal"><h3>Focus</h3><p>Animation, Art &amp; Games</p></div>
+        <div class="info-card reveal"><h3>Press contact</h3><p><a href="mailto:contact@merakienergi.com">contact@merakienergi.com</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-extra">
+    <div class="wrap presskit-wrap">
+      <div class="sec-head-light left reveal"><h2>Brand assets</h2><p>Please use the logos as provided and do not alter colors or proportions.</p></div>
+      <div class="asset-grid reveal-group">
+        <div class="asset-card reveal"><div class="asset-preview"><img src="assets/logo.png" alt="Meraki logo"></div><span>Logo mark</span><a class="btn ghost" href="assets/logo.png" download>Download PNG</a></div>
+        <div class="asset-card reveal"><div class="asset-preview"><img src="assets/studio.png" alt="Meraki Studio wordmark"></div><span>Wordmark</span><a class="btn ghost" href="assets/studio.png" download>Download PNG</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SLIDE-IN CONTACT DRAWER (KANAN KE KIRI)    -->
+  <!-- ========================================== -->
+  <div class="contact-drawer-overlay" id="contactOverlay"></div>
+  <aside class="contact-drawer" id="contactDrawer" aria-hidden="true">
+    <button class="drawer-close" id="closeDrawerBtn" aria-label="Tutup Form Kontak">&times;</button>
+    
+    <div class="drawer-content">
+      <h2>Mari mulai obrolan project Anda.</h2>
+      <p>Ceritakan ide atau kebutuhan Anda, kami akan segera merespons.</p>
+
+      <form class="contactform">
+        <div class="field">
+          <label for="nm">Nama</label>
+          <input id="nm" type="text" placeholder="Nama Anda" required>
+        </div>
+        <div class="field">
+          <label for="em">Email</label>
+          <input id="em" type="email" placeholder="email@contoh.com" required>
+        </div>
+        
+        <!-- Field Baru: Inquiry Type (Dropdown) -->
+        <div class="field">
+          <label for="inq">Tipe Inquiry</label>
+          <select id="inq" required>
+            <option value="" disabled selected>Pilih jenis pesan...</option>
+            <option value="general">General Inquiry</option>
+            <option value="collab">Collaboration / Partnership</option>
+            <option value="services">3D Production Services</option>
+            <option value="careers">Careers & Hiring</option>
+            <option value="media">Press & Media</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+
+        <!-- Field Baru: Subject -->
+        <div class="field">
+          <label for="sub">Subjek</label>
+          <input id="sub" type="text" placeholder="Topik pesan Anda" required>
+        </div>
+
+        <div class="field">
+          <label for="ms">Pesan</label>
+          <textarea id="ms" placeholder="Ceritakan detailnya di sini..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-drawer-submit">Kirim Pesan</button>
+      </form>
+
+      <div class="drawer-info">
+        <div class="info-item">
+          <span>Email</span>
+          <a href="mailto:febri@merakienergi.com">febri@merakienergi.com</a>
+        </div>
+        <div class="info-item">
+          <span>Telepon</span>
+          <span>+62 821-4371-4930</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <h3>MERAKI STUDIO</h3>
+          <p>Animation. Art. Games.</p>
+          <a href="mailto:febri@merakienergi.com" class="footer-email"><i class="fa-regular fa-envelope"></i> febri@merakienergi.com</a>
+          <a href="mailto:contact@merakienergi.com" class="footer-email"><i class="fa-regular fa-envelope"></i> contact@merakienergi.com</a>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="project.html">Project</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="presskit.html">Press Kit</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" class="open-contact-trigger">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <p class="social-note">Follow us for updates on our latest projects.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Meraki Studio. All rights reserved.</span>
+        <span>Made with love in Malang, Indonesia</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

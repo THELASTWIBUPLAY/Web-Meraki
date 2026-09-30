@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company — Meraki Studio</title>
+  <meta name="description" content="Meraki Studio is a creative production studio for animation, art, and games based in Malang, Indonesia.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-inner">
+  <nav class="top">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Meraki Studio logo" class="brand-logo">
+        <img src="assets/studio.png" alt="Meraki Studio" class="brand-text">
+      </a>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="company.html" class="active">Company</a>
+        <a href="project.html">Project</a>
+        <button class="nav-contact-btn open-contact-trigger">CONTACT US ➔</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <span class="mobile-menu-label">NAVIGATION</span>
+      <div class="mobile-links">
+        <a href="index.html"><span class="nav-num">01</span> HOME</a>
+        <a href="company.html" class="active"><span class="nav-num">02</span> COMPANY</a>
+        <a href="project.html"><span class="nav-num">03</span> PROJECT</a>
+      </div>
+      <button class="mobile-menu-cta open-contact-trigger">CONTACT US ➔</button>
+    </div>
+  </div>
+
+  <main class="stacked-page">
+    <section class="stack-section company-hero" id="about">
+      <div class="bg-wave-layer" style="z-index: 2;"><img src="assets/2.png" alt="" class="wave-shape"></div>
+      <div class="wrap content-layer">
+        <div class="vision-inner reveal">
+          <h2 class="vision-label">ABOUT MERAKI STUDIO</h2>
+          <p class="vision-statement">An independent creative production studio crafting animation, art, and games from Malang, Indonesia.</p>
+          <p class="vision-body">&ldquo;Meraki&rdquo; describes putting your soul, creativity, and love into what you do. That is how we approach every frame, every asset, and every interaction we make for our partners.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="page-extra profile-section">
+    <div class="wrap">
+      <div class="profile-block reveal">
+        <div class="profile-tag"><span>STUDIO PROFILE</span></div>
+        <dl class="profile-rows">
+          <div class="profile-row"><dt>Studio Name</dt><dd>Meraki Studio</dd></div>
+          <div class="profile-row"><dt>Founded</dt><dd>2013</dd></div>
+          <div class="profile-row"><dt>Based in</dt><dd>Malang, East Java, Indonesia</dd></div>
+          <div class="profile-row"><dt>Focus</dt><dd>Animation, Art &amp; Games</dd></div>
+          <div class="profile-row"><dt>Team</dt><dd>A multidisciplinary crew of 7 core creatives</dd></div>
+          <div class="profile-row"><dt>Contact</dt><dd><a href="mailto:contact@merakienergi.com">contact@merakienergi.com</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-extra">
+    <div class="wrap">
+      <div class="sec-head-light reveal">
+        <h2>Our story</h2>
+        <p>Meraki Studio began as a small group of artists and developers who wanted to make expressive work with a strong sense of craft. Today we support partners from first concept to final delivery, covering animation, asset production, VFX, and game development, with clear communication at every stage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-extra profile-section">
+    <div class="wrap">
+      <div class="profile-block reveal">
+        <div class="profile-tag"><span>OUR VALUES</span></div>
+        <dl class="profile-rows values-rows">
+          <div class="profile-row"><dt><em>01</em>Collaboration</dt><dd>Every discipline works connected, never in isolated silos.</dd></div>
+          <div class="profile-row"><dt><em>02</em>Creativity</dt><dd>Fresh ideas always get room, however small their source.</dd></div>
+          <div class="profile-row"><dt><em>03</em>Craftsmanship</dt><dd>Small details are what separate good work from great work.</dd></div>
+          <div class="profile-row"><dt><em>04</em>Growth</dt><dd>Learning and experimenting are part of everyday studio life.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-extra team team-section" id="team">
+    <div class="wrap">
+      <div class="sec-head-light reveal">
+        <h2>The people behind the studio</h2>
+        <p>Select a profile to see their role and focus.</p>
+      </div>
+      <div class="team-showcase reveal">
+        <div class="team-roster" id="teamRoster">
+            <button class="roster-avatar active" data-index="0" aria-label="Budi Santoso"><img src="assets/member_0000s_0006_Layer3.png" alt="Budi Santoso"></button>
+            <button class="roster-avatar" data-index="1" aria-label="Risa Kartika"><img src="assets/member_0000s_0005_Layer6.png" alt="Risa Kartika"></button>
+            <button class="roster-avatar" data-index="2" aria-label="Gatot Prasetyo"><img src="assets/member_0000s_0004_Layer7.png" alt="Gatot Prasetyo"></button>
+            <button class="roster-avatar" data-index="3" aria-label="Dimas Arya"><img src="assets/member_0000s_0003_Layer9.png" alt="Dimas Arya"></button>
+            <button class="roster-avatar" data-index="4" aria-label="Kevin Wijaya"><img src="assets/member_0000s_0002_Layer10.png" alt="Kevin Wijaya"></button>
+            <button class="roster-avatar" data-index="5" aria-label="Arif Hidayat"><img src="assets/member_0000s_0001_Layer11.png" alt="Arif Hidayat"></button>
+            <button class="roster-avatar" data-index="6" aria-label="Nadia Putri"><img src="assets/member_0000s_0000_Layer12.png" alt="Nadia Putri"></button>
+        </div>
+        <div class="team-featured" id="teamFeatured">
+          <div class="featured-ring"><img id="featuredImg" src="assets/member_0000s_0006_Layer3.png" alt="Featured team member"></div>
+          <div class="featured-info-box">
+            <h3 id="featuredName">Budi Santoso</h3>
+            <div class="role-wrapper"><span class="role-badge" id="featuredRole">Lead Illustrator &amp; Art Director</span></div>
+            <p id="featuredBio">Sets the visual direction, character concepts, and the signature art style of the studio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SLIDE-IN CONTACT DRAWER (KANAN KE KIRI)    -->
+  <!-- ========================================== -->
+  <div class="contact-drawer-overlay" id="contactOverlay"></div>
+  <aside class="contact-drawer" id="contactDrawer" aria-hidden="true">
+    <button class="drawer-close" id="closeDrawerBtn" aria-label="Tutup Form Kontak">&times;</button>
+    
+    <div class="drawer-content">
+      <h2>Mari mulai obrolan project Anda.</h2>
+      <p>Ceritakan ide atau kebutuhan Anda, kami akan segera merespons.</p>
+
+      <form class="contactform">
+        <div class="field">
+          <label for="nm">Nama</label>
+          <input id="nm" type="text" placeholder="Nama Anda" required>
+        </div>
+        <div class="field">
+          <label for="em">Email</label>
+          <input id="em" type="email" placeholder="email@contoh.com" required>
+        </div>
+        
+        <!-- Field Baru: Inquiry Type (Dropdown) -->
+        <div class="field">
+          <label for="inq">Tipe Inquiry</label>
+          <select id="inq" required>
+            <option value="" disabled selected>Pilih jenis pesan...</option>
+            <option value="general">General Inquiry</option>
+            <option value="collab">Collaboration / Partnership</option>
+            <option value="services">3D Production Services</option>
+            <option value="careers">Careers & Hiring</option>
+            <option value="media">Press & Media</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+
+        <!-- Field Baru: Subject -->
+        <div class="field">
+          <label for="sub">Subjek</label>
+          <input id="sub" type="text" placeholder="Topik pesan Anda" required>
+        </div>
+
+        <div class="field">
+          <label for="ms">Pesan</label>
+          <textarea id="ms" placeholder="Ceritakan detailnya di sini..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-drawer-submit">Kirim Pesan</button>
+      </form>
+
+      <div class="drawer-info">
+        <div class="info-item">
+          <span>Email</span>
+          <a href="mailto:febri@merakienergi.com">febri@merakienergi.com</a>
+        </div>
+        <div class="info-item">
+          <span>Telepon</span>
+          <span>+62 821-4371-4930</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <h3>MERAKI STUDIO</h3>
+          <p>Animation. Art. Games.</p>
+          <a href="mailto:febri@merakienergi.com" class="footer-email"><i class="fa-regular fa-envelope"></i> febri@merakienergi.com</a>
+          <a href="mailto:contact@merakienergi.com" class="footer-email"><i class="fa-regular fa-envelope"></i> contact@merakienergi.com</a>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="project.html">Project</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="presskit.html">Press Kit</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" class="open-contact-trigger">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <p class="social-note">Follow us for updates on our latest projects.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Meraki Studio. All rights reserved.</span>
+        <span>Made with love in Malang, Indonesia</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
