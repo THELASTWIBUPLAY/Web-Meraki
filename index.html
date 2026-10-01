@@ -63,20 +63,8 @@
       </div>
     </section>
 
-    <section class="stack-section vision" id="vision">
-      <div class="bg-wave-layer" style="z-index: 2;"><img src="assets/2.png" alt="" class="wave-shape"></div>
-      <div class="wrap content-layer">
-        <div class="vision-inner reveal">
-          <h2 class="vision-label">OUR VISION</h2>
-          <p class="vision-statement">What we&rsquo;ve always strived for is to create expressive and engaging experiences through animation and games.</p>
-          <p class="vision-body">We aim to deliver thoughtful creative work with strong attention to detail, ensuring that every frame, interaction, and experience contributes to the vision of each project we produce.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Creative Production + How We Work: one page -->
-    <section class="stack-section layanan tall" id="layanan">
-      <div class="bg-wave-layer" style="z-index: 3;"><img src="assets/7.png" alt="" class="wave-shape"></div>
+    <section class="stack-section vision tall bg-blue" id="vision">
+      <div class="bg-wave-layer" style="z-index: 2; --wave-fill: #279CBD;"><img src="assets/New Background Asset/1.png" alt="" class="wave-shape wave-natural"></div>
       <div class="wrap content-layer">
         <div class="sec-head reveal text-center">
           <h2>Creative Production, From Idea to Final</h2>
@@ -114,9 +102,21 @@
       </div>
     </section>
 
+    <!-- Creative Production + How We Work: one page -->
+    <section class="stack-section layanan tall bg-mint" id="layanan">
+      <div class="bg-wave-layer" style="z-index: 3; --wave-fill: #97DFD9;"><img src="assets/New Background Asset/3.png" alt="" class="wave-shape wave-natural"></div>
+      <div class="wrap content-layer">
+        <div class="vision-inner reveal">
+          <h2 class="vision-label">OUR VISION</h2>
+          <p class="vision-statement">What we&rsquo;ve always strived for is to create expressive and engaging experiences through animation and games.</p>
+          <p class="vision-body">We aim to deliver thoughtful creative work with strong attention to detail, ensuring that every frame, interaction, and experience contributes to the vision of each project we produce.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio: single row only -->
-    <section class="stack-section projects" id="portfolio">
-      <div class="bg-wave-layer" style="z-index: 4;"><img src="assets/4.png" alt="" class="wave-shape"></div>
+    <section class="stack-section projects bg-dark" id="portfolio">
+      <div class="bg-wave-layer" style="z-index: 4; --wave-fill: #276679;"><img src="assets/New Background Asset/2.png" alt="" class="wave-shape wave-natural"></div>
       <div class="wrap content-layer">
         <div class="sec-head reveal">
           <h2>Portfolio</h2>
@@ -132,7 +132,7 @@
     </section>
 
     <section class="stack-section cta-banner partner" id="partner">
-      <div class="bg-wave-layer" style="z-index: 5;"><img src="assets/8.png" alt="" class="wave-shape"></div>
+      <div class="bg-wave-layer" style="z-index: 5; --wave-fill: #279CBD;"><img src="assets/New Background Asset/4_.png" alt="" class="wave-shape wave-natural"></div>
       <div class="wrap content-layer">
         <div class="cta-inner reveal">
           <h2>Partner Studio</h2>
@@ -266,5 +266,27 @@
   <script src="project-data.js"></script>
   <script src="project.js"></script>
   <script src="script.js"></script>
+  <script>
+    /* Semua section di .stacked-page di-pin (sticky). Section yang lebih tinggi dari layar
+       memakai top NEGATIF (tinggi layar - tinggi section): bagian bawahnya menempel di dasar
+       layar, lalu section berikutnya menimpa dari bawah. Gambar dan teks ikut section-nya
+       sendiri, dan setelah selesai di-scroll section diam di tempat. */
+    (function () {
+      var list = Array.prototype.slice.call(document.querySelectorAll('.stacked-page > .stack-section'));
+      if (!list.length) return;
+      function setTops() {
+        list.forEach(function (s) {
+          s.style.top = Math.min(0, window.innerHeight - s.offsetHeight) + 'px';
+        });
+      }
+      setTops();
+      window.addEventListener('resize', setTops);
+      window.addEventListener('load', setTops);
+      if (window.ResizeObserver) {
+        var ro = new ResizeObserver(setTops);
+        list.forEach(function (s) { ro.observe(s); });
+      }
+    })();
+  </script>
 </body>
 </html>

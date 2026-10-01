@@ -3483,3 +3483,178 @@ body.page-detail {
   display: block;
   pointer-events: none;
 }
+
+
+/* Background gelombang baru (PNG tinggi): jaga rasio asli, jangan di-stretch.
+   Gambar: lebar 100%, tinggi otomatis, menempel di atas. Sisa area di bawah gambar
+   diisi warna dasar gambar (--wave-fill, diatur di index.html) lewat ::after. */
+.bg-wave-layer:has(.wave-natural) {
+  display: flex;
+  flex-direction: column;
+}
+.bg-wave-layer:has(.wave-natural)::after {
+  content: "";
+  flex: 1 0 auto;
+  background: var(--wave-fill, transparent);
+}
+.wave-shape.wave-natural {
+  position: static;
+  flex: none;
+  width: 100%;
+  height: auto;
+  object-fit: initial;
+  display: block;
+}
+
+
+/* ==========================================================================
+   Index: Creative Production (bg mint / 3.png) & Portfolio (bg teal gelap / 2.png)
+   - padding atas custom supaya konten mulai di bawah gelombang & ikon petir
+     (tinggi gelombang ikut lebar layar, jadi pakai vw)
+   - warna teks Creative Production disesuaikan karena latar sekarang mint
+   ========================================================================== */
+.stack-section.bg-mint { --wave-pad: 13vw;   --wave-min: 40px; }
+.stack-section.bg-dark { --wave-pad: 14.5vw; --wave-min: 40px; }
+.stack-section.bg-mint .content-layer,
+.stack-section.bg-dark .content-layer {
+  padding-top: max(calc(var(--nav-h) + var(--wave-min)), calc(var(--wave-pad) + 36px));
+  padding-bottom: clamp(72px, 8vw, 120px);
+}
+@media (max-width: 768px) {
+  .stack-section.bg-mint,
+  .stack-section.bg-dark { --wave-min: 76px; }
+  .stack-section.bg-mint .content-layer,
+  .stack-section.bg-dark .content-layer { padding-bottom: 96px; }
+}
+
+/* Teks di atas latar mint */
+.layanan.bg-mint { color: var(--forest-deep); }
+.layanan.bg-mint .sec-head h2 { color: var(--forest-deep); }
+.layanan.bg-mint .service-lead { color: rgba(18, 63, 77, .85); }
+.layanan.bg-mint .pipeline-title,
+.layanan.bg-mint .pipeline-heading { color: var(--forest-deep); }
+.layanan.bg-mint .pipeline-col .pipeline-icon { border-color: var(--forest-deep); }
+.layanan.bg-mint .pipeline-col:not(:last-child)::after { background: rgba(18, 63, 77, .35); }
+
+/* ==========================================================================
+   FIX: "Creative Production, From Idea to Final" (#vision) & "OUR VISION" (#layanan)
+   ========================================================================== */
+
+/* ---- 1. Creative Production: section ikut memanjang sesuai konten ----
+   Background (gelombang + gamepad) ikut ter-scroll bersama konten,
+   sisa area di bawah gambar diisi warna --wave-fill (#279CBD).        */
+.stack-section.vision.tall .bg-wave-layer {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+/* Konten mulai di BAWAH gamepad (tinggi gelombang ikut lebar layar -> vw) */
+.stack-section.bg-blue { --wave-pad: 14.5vw; --wave-min: 40px; }
+.stack-section.bg-blue .content-layer {
+  padding-top: max(calc(var(--nav-h) + var(--wave-min)), calc(var(--wave-pad) + 32px));
+  padding-bottom: clamp(72px, 8vw, 120px);
+}
+@media (max-width: 768px) {
+  .stack-section.bg-blue { --wave-min: 76px; }
+  .stack-section.bg-blue .content-layer { padding-bottom: 96px; }
+}
+
+/* ---- 2. OUR VISION: turunkan teks supaya pas di tengah area mint ----
+   Ubah --vision-shift kalau mau lebih naik / lebih turun.             */
+.stack-section.layanan.bg-mint { --vision-shift: 16vw; }
+.stack-section.layanan.bg-mint .content-layer {
+  padding-top: max(
+    calc(var(--nav-h) + var(--wave-min)),
+    calc(var(--wave-pad) + 36px + var(--vision-shift))
+  );
+}
+@media (max-width: 768px) {
+  .stack-section.layanan.bg-mint { --vision-shift: 12vw; }
+}
+
+
+
+
+/* ==========================================================================
+   FIX 2: Creative Production (#vision) — tinggi pas artwork + "diam di tempat"
+   ========================================================================== */
+
+/* Tinggi section ~ panjang artwork yang terpakai (kartu + d-pad berakhir
+   sekitar 0.86x lebar layar). Naikkan kalau mau lebih banyak ruang di bawah. */
+.stack-section.vision.tall {
+  --vision-art-ratio: 0.95;
+  min-height: max(100vh, calc(100vw * var(--vision-art-ratio)));
+
+  /* Section ini tinggi, jadi dibuat sticky dengan `top` NEGATIF
+     (diatur lewat JS di index.html: top = tinggi layar - tinggi section).
+     Hasilnya: setelah bagian bawahnya sampai di dasar layar, section ini
+     DIAM di tempat dan section mint menimpa dari bawah (efek stack seperti semula),
+     jadi hero di belakang tidak lagi "bocor". */
+  position: sticky;
+  top: var(--vision-top, 0px);
+}
+
+/* Konten mulai dari atas (di bawah gamepad), tidak lagi di-center vertikal */
+.stack-section.bg-blue .content-layer {
+  flex: 1 1 auto;
+  align-self: stretch;
+  justify-content: flex-start;
+  padding-bottom: clamp(72px, 8vw, 120px);
+}
+
+/* ==========================================================================
+   FIX 3 (index): semua section pakai efek stack yang sama (sticky)
+   - Layanan (Our Vision), Portfolio, Partner ikut di-pin seperti Hero/Creative Production,
+     jadi di balik puncak gelombang section berikutnya yang terlihat selalu section
+     tepat sebelumnya, bukan sisa kartu "How We Work".
+   - Gambar gelombang menempel di section-nya (absolute), bukan sticky di layar,
+     jadi gambar dan teks bergerak bersama dan tidak "bocor" naik.
+   - Nilai top diatur lewat JS di index.html (negatif kalau section > 1 layar).
+   ========================================================================== */
+body:not(.page-inner) .stacked-page > .stack-section.layanan,
+body:not(.page-inner) .stacked-page > .stack-section.projects,
+body:not(.page-inner) .stacked-page > .stack-section.partner {
+  position: sticky;
+  top: 0;
+  height: auto !important;
+  overflow: hidden !important;
+}
+body:not(.page-inner) .stack-section.layanan .bg-wave-layer,
+body:not(.page-inner) .stack-section.projects .bg-wave-layer {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+/* Menyesuaikan jarak atas khusus section vision */
+#vision .content-layer {
+  padding-top: var(--nav-h) !important; /* Atau tambah offset kecil seperti calc(var(--nav-h) + 10px) */
+}
+
+/* Mengurangi margin bawah pada judul section jika terasa terlalu renggang */
+#vision .sec-head {
+  margin-bottom: 20px !important; /* Nilai default sebelumnya adalah 36px/44px */
+}
+
+@media (max-width: 768px) {
+  .stack-section:not(.hero) {
+    margin-top: -60px !important; /* Ubah dari -40px menjadi -60px agar section ditarik lebih ke atas */
+  }
+}
+
+/* Hanya mengubah padding di dalam section layanan */
+#layanan .wrap.content-layer {
+  padding-top: 60px !important;    /* Sesuaikan nilai ini (misal: 60px/80px/100px) */
+  padding-bottom: 60px !important;
+}
+
+/* Menjaga agar konten section Creative Production (Blue) berada di bawah gamepad */
+#vision.stack-section.bg-blue .content-layer {
+  padding-top: max(calc(var(--nav-h) + 40px), calc(14.5vw + 32px)) !important;
+  padding-bottom: 60px !important;
+}
