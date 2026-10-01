@@ -3474,3 +3474,12 @@ body.page-detail {
   .plan-card:hover { transform: none !important; }
   .game-card:hover .game-img { transform: none; }
 }
+
+/* Ikon pipeline (gambar 1:1) */
+.pipeline-icon .pipeline-icon-img {
+  width: 62%;
+  height: 62%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
