@@ -3662,3 +3662,10 @@ body:not(.page-inner) .stack-section.projects .bg-wave-layer {
   padding-top: max(calc(var(--nav-h) + 40px), calc(14.5vw + 32px)) !important;
   padding-bottom: 60px !important;
 }
+/* ==========================================================================
+   Index: Hero (halaman 1) TIDAK sticky -> scroll normal ke Creative Production.
+   Section lain tetap sticky/stack seperti biasa.
+   ========================================================================== */
+body:not(.page-inner) .stacked-page > .stack-section.hero {
+  position: relative;
+}
