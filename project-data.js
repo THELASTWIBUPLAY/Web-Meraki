@@ -5,6 +5,7 @@
    category   : slug kategori (lihat PROJECT_CATEGORIES)
    title, summary, year, client, role, duration
    cover      : gambar untuk kartu & header halaman detail
+   coverPosition : (opsional) fokus crop gambar, mis. "center 30%" untuk gambar potret
    overview   : array paragraf
    highlights : array poin hasil / deliverable
    tools      : array nama software
@@ -49,13 +50,13 @@ const PROJECTS = [
   {
     "id": "animation-01",
     "category": "animation",
-    "title": "Project Title 01",
-    "summary": "Short project description goes here.",
+    "title": "BoBoiBoy",
+    "summary": "Hard-surface mech and industrial set, lit and rendered as a full 3D scene.",
     "year": 2026,
     "client": "Client Name",
     "role": "Art Direction & Animation",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3d_pipeline_3.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -70,20 +71,7 @@ const PROJECTS = [
       "After Effects",
       "Premiere Pro"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -99,13 +87,13 @@ const PROJECTS = [
   {
     "id": "animation-02",
     "category": "animation",
-    "title": "Project Title 02",
-    "summary": "Short project description goes here.",
+    "title": "Papa Zola",
+    "summary": "Stylized 3D street environment with character blocking and lighting.",
     "year": 2025,
     "client": "Client Name",
     "role": "Art Direction & Animation",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3d_pipeline_2.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -120,20 +108,7 @@ const PROJECTS = [
       "After Effects",
       "Premiere Pro"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -149,13 +124,13 @@ const PROJECTS = [
   {
     "id": "animation-03",
     "category": "animation",
-    "title": "Project Title 03",
-    "summary": "Short project description goes here.",
+    "title": "Racer Cockpit Scene",
+    "summary": "Character performance shot from a work-in-progress animation scene.",
     "year": 2024,
     "client": "Client Name",
     "role": "Art Direction & Animation",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3d_1.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -170,20 +145,7 @@ const PROJECTS = [
       "After Effects",
       "Premiere Pro"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -449,13 +411,13 @@ const PROJECTS = [
   {
     "id": "3d-animation-01",
     "category": "3d-animation",
-    "title": "Project Title 01",
-    "summary": "Short project description goes here.",
+    "title": "Classroom Daydream",
+    "summary": "Soft-lit 3D character shot with natural window lighting.",
     "year": 2026,
     "client": "Client Name",
     "role": "3D Animation",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3D_Animation_1.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -470,20 +432,7 @@ const PROJECTS = [
       "Maya",
       "Substance Painter"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -499,13 +448,13 @@ const PROJECTS = [
   {
     "id": "3d-animation-02",
     "category": "3d-animation",
-    "title": "Project Title 02",
-    "summary": "Short project description goes here.",
+    "title": "Ribbon Dance",
+    "summary": "Stylized animation blending an illustrated character with flowing ribbon motion.",
     "year": 2026,
     "client": "Client Name",
     "role": "3D Animation",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3D_Animation_2.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -520,20 +469,7 @@ const PROJECTS = [
       "Maya",
       "Substance Painter"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -549,13 +485,13 @@ const PROJECTS = [
   {
     "id": "3d-animation-03",
     "category": "3d-animation",
-    "title": "Project Title 03",
-    "summary": "Short project description goes here.",
+    "title": "Doorstep Delivery",
+    "summary": "Character-driven 3D scene with a delivery rider and warm lighting.",
     "year": 2026,
     "client": "Client Name",
     "role": "3D Animation",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3D_animation_3.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -570,20 +506,7 @@ const PROJECTS = [
       "Maya",
       "Substance Painter"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -649,13 +572,13 @@ const PROJECTS = [
   {
     "id": "vfx-cgi-01",
     "category": "vfx-cgi",
-    "title": "Project Title 01",
-    "summary": "Short project description goes here.",
+    "title": "Executive Rooster",
+    "summary": "Anthropomorphic CGI character placed in a realistic office set.",
     "year": 2026,
     "client": "Client Name",
     "role": "VFX & Compositing",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3D_Cgi.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -670,20 +593,7 @@ const PROJECTS = [
       "Nuke",
       "Blender"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -694,7 +604,8 @@ const PROJECTS = [
         "name": "Name"
       }
     ],
-    "link": null
+    "link": null,
+    "coverPosition": "center 30%"
   },
   {
     "id": "vfx-cgi-02",
@@ -849,13 +760,13 @@ const PROJECTS = [
   {
     "id": "asset-rigging-01",
     "category": "asset-rigging",
-    "title": "Project Title 01",
-    "summary": "Short project description goes here.",
+    "title": "Isometric Kitchen",
+    "summary": "Detailed isometric kitchen diorama with modeled props and warm lighting.",
     "year": 2026,
     "client": "Client Name",
     "role": "Modeling & Rigging",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3D_Asset_1.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -870,20 +781,7 @@ const PROJECTS = [
       "ZBrush",
       "Maya"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -894,18 +792,19 @@ const PROJECTS = [
         "name": "Name"
       }
     ],
-    "link": null
+    "link": null,
+    "coverPosition": "center 55%"
   },
   {
     "id": "asset-rigging-02",
     "category": "asset-rigging",
-    "title": "Project Title 02",
-    "summary": "Short project description goes here.",
+    "title": "Supermarket Crew",
+    "summary": "Stylized 3D character lineup, modeled and ready for rigging.",
     "year": 2026,
     "client": "Client Name",
     "role": "Modeling & Rigging",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3D_Character.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -920,20 +819,7 @@ const PROJECTS = [
       "ZBrush",
       "Maya"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -944,18 +830,19 @@ const PROJECTS = [
         "name": "Name"
       }
     ],
-    "link": null
+    "link": null,
+    "coverPosition": "center 70%"
   },
   {
     "id": "asset-rigging-03",
     "category": "asset-rigging",
-    "title": "Project Title 03",
-    "summary": "Short project description goes here.",
+    "title": "Road Trip Duo",
+    "summary": "Anime-styled 3D characters with toon shading in a car interior.",
     "year": 2026,
     "client": "Client Name",
     "role": "Modeling & Rigging",
     "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "cover": "assets/project asset/3D_Character.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
@@ -970,20 +857,7 @@ const PROJECTS = [
       "ZBrush",
       "Maya"
     ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
+    "gallery": [],
     "credits": [
       {
         "role": "Director",
@@ -994,7 +868,8 @@ const PROJECTS = [
         "name": "Name"
       }
     ],
-    "link": null
+    "link": null,
+    "coverPosition": "center 42%"
   },
   {
     "id": "asset-rigging-04",

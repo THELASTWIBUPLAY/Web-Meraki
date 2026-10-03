@@ -3669,3 +3669,16 @@ body:not(.page-inner) .stack-section.projects .bg-wave-layer {
 body:not(.page-inner) .stacked-page > .stack-section.hero {
   position: relative;
 }
+
+/* ==========================================================================
+   Hero (desktop): teks kiri naik sedikit supaya sejajar tengah dengan video
+   (video sendiri sudah digeser ke atas lewat translate di .hero-video-wrapper).
+   Pakai `top` (bukan transform) agar tidak bentrok dengan animasi .reveal.
+   Ubah angka -68px kalau mau lebih naik / lebih turun.
+   ========================================================================== */
+@media (min-width: 769px) {
+  .hero .wrap > .reveal:first-child {
+    position: relative;
+    top: -68px;
+  }
+}

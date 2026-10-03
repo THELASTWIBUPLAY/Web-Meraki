@@ -13,13 +13,14 @@
     return c ? c.name : slug;
   };
   var detailUrl = function (id) { return 'project-detail.html?id=' + encodeURIComponent(id); };
+  var coverPos = function (p) { return p.coverPosition ? ' style="object-position:' + esc(p.coverPosition) + '"' : ''; };
 
   /* ---------- 1. Cards ---------- */
   var card = function (p) {
     return '<a class="game-card" href="' + detailUrl(p.id) + '" draggable="false" aria-label="View details of ' + esc(p.title) + '">' +
       '<div class="proj-thumb">' +
         '<span class="game-tag">' + esc(catName(p.category)) + '</span>' +
-        '<img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '" class="game-img" draggable="false">' +
+        '<img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '" class="game-img" draggable="false"' + coverPos(p) + '>' +
       '</div>' +
       '<div class="proj-body"><h3>' + esc(p.title) + '</h3><p>' + esc(p.summary) + '</p></div>' +
     '</a>';
@@ -55,7 +56,7 @@
 
     var cardY = function (p) {
       return '<a class="game-card" href="' + detailUrl(p.id) + '" draggable="false" aria-label="View details of ' + esc(p.title) + '">' +
-        '<div class="proj-thumb"><img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '" class="game-img" draggable="false"></div>' +
+        '<div class="proj-thumb"><img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '" class="game-img" draggable="false"' + coverPos(p) + '></div>' +
         '<div class="proj-body"><h3>' + esc(p.title) + '</h3>' +
         '<span class="proj-meta">' + esc(catName(p.category)) + ' / ' + esc(p.year) + '</span></div>' +
       '</a>';
@@ -157,7 +158,7 @@
       '<dl class="pd-facts">' + facts + '</dl>' +
     '</header>' +
 
-    '<figure class="pd-cover wrap"><img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '"></figure>' +
+    '<figure class="pd-cover wrap"><img src="' + esc(p.cover) + '" alt="' + esc(p.title) + '"' + coverPos(p) + '></figure>' +
 
     '<div class="pd-body wrap">' +
       '<section class="pd-story">' +
