@@ -842,7 +842,7 @@ const PROJECTS = [
     "client": "Client Name",
     "role": "Modeling & Rigging",
     "duration": "8 weeks",
-    "cover": "assets/project asset/3D_Character.png",
+    "cover": "assets/project asset/3D_Character_2.png",
     "overview": [
       "Replace this with the story of the project: what the client needed and what the brief looked like.",
       "Use a second paragraph for how the team approached it and what made it different."
