@@ -159,256 +159,6 @@ const PROJECTS = [
     "link": null
   },
   {
-    "id": "animation-04",
-    "category": "animation",
-    "title": "Project Title 04",
-    "summary": "Short project description goes here.",
-    "year": 2023,
-    "client": "Client Name",
-    "role": "Art Direction & Animation",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Blender",
-      "After Effects",
-      "Premiere Pro"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "2d-animation-01",
-    "category": "2d-animation",
-    "title": "Project Title 01",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "2D Animation & Compositing",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Toon Boom Harmony",
-      "Clip Studio Paint",
-      "After Effects"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "2d-animation-02",
-    "category": "2d-animation",
-    "title": "Project Title 02",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "2D Animation & Compositing",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Toon Boom Harmony",
-      "Clip Studio Paint",
-      "After Effects"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "2d-animation-03",
-    "category": "2d-animation",
-    "title": "Project Title 03",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "2D Animation & Compositing",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Toon Boom Harmony",
-      "Clip Studio Paint",
-      "After Effects"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "2d-animation-04",
-    "category": "2d-animation",
-    "title": "Project Title 04",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "2D Animation & Compositing",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Toon Boom Harmony",
-      "Clip Studio Paint",
-      "After Effects"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
     "id": "3d-animation-01",
     "category": "3d-animation",
     "title": "Classroom Daydream",
@@ -520,56 +270,6 @@ const PROJECTS = [
     "link": null
   },
   {
-    "id": "3d-animation-04",
-    "category": "3d-animation",
-    "title": "Project Title 04",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "3D Animation",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Blender",
-      "Maya",
-      "Substance Painter"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
     "id": "vfx-cgi-01",
     "category": "vfx-cgi",
     "title": "Executive Rooster",
@@ -606,156 +306,6 @@ const PROJECTS = [
     ],
     "link": null,
     "coverPosition": "center 30%"
-  },
-  {
-    "id": "vfx-cgi-02",
-    "category": "vfx-cgi",
-    "title": "Project Title 02",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "VFX & Compositing",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Houdini",
-      "Nuke",
-      "Blender"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "vfx-cgi-03",
-    "category": "vfx-cgi",
-    "title": "Project Title 03",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "VFX & Compositing",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Houdini",
-      "Nuke",
-      "Blender"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "vfx-cgi-04",
-    "category": "vfx-cgi",
-    "title": "Project Title 04",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "VFX & Compositing",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Houdini",
-      "Nuke",
-      "Blender"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
   },
   {
     "id": "asset-rigging-01",
@@ -872,253 +422,84 @@ const PROJECTS = [
     "coverPosition": "center 42%"
   },
   {
-    "id": "asset-rigging-04",
-    "category": "asset-rigging",
-    "title": "Project Title 04",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "Modeling & Rigging",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Blender",
-      "ZBrush",
-      "Maya"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
     "id": "game-01",
     "category": "game",
-    "title": "Project Title 01",
-    "summary": "Short project description goes here.",
+    "title": "Quartlane",
+    "summary": "A casual card game inspired by the classic Quartet card game.",
     "year": 2026,
-    "client": "Client Name",
+    "client": "Meraki Studio",
     "role": "Game Art & Production",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
+    "duration": "4 weeks",
+    "cover": "assets/project_asset/quartlane/thumbnail.png",
     "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
+      "Quartlane is a casual strategic card mobile game that blends the nostalgic fun of the classic Quartet card game with modern deck-building mechanics. Players race to complete card category sets while using offensive, defensive, buff, and normal action cards to protect their collections, sabotage opponents, and create unexpected comebacks.",
+      "Controls: single press to select cards, opponents, and categories, play action cards, and confirm actions. Double press to select or deselect a card category. Press and hold to view detailed card information, and use the Finish button to end your turn.",
+      "For the full Quartlane tutorial, open Profile → Info → Tutorial inside the game."
     ],
     "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
+      "Quartet-style set collecting combined with deck-building mechanics",
+      "Four action card types: offensive, defensive, buff, and normal",
+      "Touch-friendly controls built for casual mobile play"
     ],
     "tools": [
-      "Unity",
-      "Blender",
-      "Spine"
+      "Godot",
+      "Krita",
+      "Clip Studio Paint",
+      "Adobe Photoshop",
+      "Ibis Paint",
+      "Material Maker"
     ],
     "gallery": [
       {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
+        "src": "assets/project_asset/quartlane/1.Jpeg",
+        "caption": "Quartlane main menu"
       },
       {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
+        "src": "assets/project_asset/quartlane/2.Jpeg",
+        "caption": "Quartlane gameplay"
       },
       {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
+        "src": "assets/project_asset/quartlane/3.Jpeg",
+        "caption": "Quartlane gameplay with action cards"
       }
     ],
     "credits": [
       {
-        "role": "Director",
-        "name": "Name"
+        "role": "Game Director, Game Producer",
+        "name": "Hendra Febri"
       },
       {
-        "role": "Lead Artist",
-        "name": "Name"
+        "role": "Associate Game Producer, Technical Artist, Game Programmer",
+        "name": "Ariiq Wicaksana"
+      },
+      {
+        "role": "Game Designer",
+        "name": "Grace Gabriela Maneking"
+      },
+      {
+        "role": "UI Artist",
+        "name": "Intan Ridwani Syahputri"
+      },
+      {
+        "role": "Game Artist",
+        "name": "Devo Dwi Jatmiko"
+      },
+      {
+        "role": "Game Artist",
+        "name": "Ramekkah Rona Jannah"
+      },
+      {
+        "role": "Game Artist",
+        "name": "Yolanda"
+      },
+      {
+        "role": "Game Programmer",
+        "name": "Irwan Chandra Aditya"
       }
     ],
-    "link": null
-  },
-  {
-    "id": "game-02",
-    "category": "game",
-    "title": "Project Title 02",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "Game Art & Production",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Unity",
-      "Blender",
-      "Spine"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "game-03",
-    "category": "game",
-    "title": "Project Title 03",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "Game Art & Production",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Unity",
-      "Blender",
-      "Spine"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
-  },
-  {
-    "id": "game-04",
-    "category": "game",
-    "title": "Project Title 04",
-    "summary": "Short project description goes here.",
-    "year": 2026,
-    "client": "Client Name",
-    "role": "Game Art & Production",
-    "duration": "8 weeks",
-    "cover": "assets/game2.jpeg",
-    "overview": [
-      "Replace this with the story of the project: what the client needed and what the brief looked like.",
-      "Use a second paragraph for how the team approached it and what made it different."
-    ],
-    "highlights": [
-      "Key result or deliverable one",
-      "Key result or deliverable two",
-      "Key result or deliverable three"
-    ],
-    "tools": [
-      "Unity",
-      "Blender",
-      "Spine"
-    ],
-    "gallery": [
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image one"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image two"
-      },
-      {
-        "src": "assets/game2.jpeg",
-        "caption": "Caption for image three"
-      }
-    ],
-    "credits": [
-      {
-        "role": "Director",
-        "name": "Name"
-      },
-      {
-        "role": "Lead Artist",
-        "name": "Name"
-      }
-    ],
-    "link": null
+    "link": {
+      "label": "Watch on YouTube",
+      "url": "https://youtu.be/MAn4jgodmfw?si=a8zDMOjf7cPJ9gOb"
+    }
   }
 ];
